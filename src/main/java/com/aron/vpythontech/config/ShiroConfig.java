@@ -58,6 +58,8 @@ public class ShiroConfig {
         //登出
         filterChainDefinitionMap.put("/logout", "logout");
         //资源
+        filterChainDefinitionMap.put("/demo/**", "anon");
+        filterChainDefinitionMap.put("/assets/**", "anon");
         filterChainDefinitionMap.put("/images/login/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/pdfimage/**", "anon");
