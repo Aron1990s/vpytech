@@ -1,0 +1,45 @@
+server:
+  port: 8078
+  servlet:
+    context-path: /vpythonTech
+  max-http-header-size: 102400
+
+mybatis-plus:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.aron.vpythontech.entity
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+spring:
+   application:
+      name: vpythonTech
+   profiles:
+     include: constants
+   datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://47.92.248.124:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root
+      password: tian1qaz!QAZ
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      useGlobalDataSourceStat: true
+
+   devtools:
+      restart:
+         enabled: true
+         additional-paths: src/main/java
+
+imageUpload:
+   path: /usr/local/quesBank/img/
