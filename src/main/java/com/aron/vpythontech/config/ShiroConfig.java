@@ -60,6 +60,7 @@ public class ShiroConfig {
         //资源
         filterChainDefinitionMap.put("/demo/**", "anon");
         filterChainDefinitionMap.put("/assets/**", "anon");
+        filterChainDefinitionMap.put("/techCtl/**", "anon");
         filterChainDefinitionMap.put("/images/login/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/pdfimage/**", "anon");
