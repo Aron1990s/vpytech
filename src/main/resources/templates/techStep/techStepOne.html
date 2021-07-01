@@ -45,6 +45,14 @@ The above copyright notice and this permission notice shall be included in all c
             color: white;
             background-color: #65a2ff;
         }
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 5px;
+            background-color: white;
+        }
+        ::-webkit-scrollbar-thumb:vertical{
+            background-color: #9c27b0;
+        }
     </style>
 </head>
 
@@ -55,8 +63,16 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="container-fluid">
             <figure class="highlight">
                 <code><span class="nt">import</span> <span class="na">pymysql </span></code><span>为引入mysql连接池</span><br>
+            </figure>
+            <figure class="highlight">
                 <code><span class="nt">import</span> <span class="na">xlrd </span></code><span>为引入excel读取所需的扩展包</span><br>
+
+            </figure>
+            <figure class="highlight">
                 <span>引入完成之后，接下来进行数据库的连接，输入ip地址，端口，用户名，密码，编码格式等进行数据库配置</span><br>
+
+            </figure>
+            <figure class="highlight">
                 <span>数据库连接建立之后，接下来就是读取Excel中sheet的内容</span>
 
             </figure>
