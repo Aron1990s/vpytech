@@ -32,4 +32,32 @@ public class TechController {
         return mv;
     }
 
+    @RequestMapping("techStepTwo")
+    public ModelAndView techStepTwo(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techStepTwo");
+        return mv;
+    }
+
+    @RequestMapping("techStepThree")
+    public ModelAndView techStepThree(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techStepThree");
+        return mv;
+    }
+
+    @RequestMapping("techStepFour")
+    public ModelAndView techStepFour(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techStepFour");
+        return mv;
+    }
+
+    @RequestMapping("techStepFive")
+    public ModelAndView techStepFive(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techStepFive");
+        return mv;
+    }
+
 }
