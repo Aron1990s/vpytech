@@ -14,15 +14,31 @@ The above copyright notice and this permission notice shall be included in all c
 
 <head>
     <th:block th:include="pageTemplate/pageHead::header('教程第一步')" />
+    <style>
+        .highlight {
+            padding: 9px 14px;
+            margin-bottom: 14px;
+            background-color: #f7f7f9;
+            border: 1px solid #e1e1e8;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body class="">
-<div class="wrapper ">
-
-    <div class="main-panel">
-        <th:block th:include="pageTemplate/navHead::navMain('第一步')" />
-
-
+<div class="main-panel" style="float: none;width: 100%">
+    <th:block th:include="pageTemplate/navHead::navMain('教程第一步')" />
+    <div class="content">
+        <div class="container-fluid">
+            <figure class="highlight">
+                大聲道多到達撒多撒多發送大所大所大所大所多多撒大打算打算大所
+            </figure>
+            <figure class="highlight">
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+                    ...
+                <span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+        </div>
     </div>
 </div>
 <th:block th:include="pageTemplate/pageFooter::mainJS" />

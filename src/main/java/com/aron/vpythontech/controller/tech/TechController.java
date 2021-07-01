@@ -19,9 +19,16 @@ public class TechController {
     protected final static Logger logger = LoggerFactory.getLogger(TechController.class);
 
     @RequestMapping("techMain")
-    public ModelAndView demo(){
+    public ModelAndView techMain(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("tech/techMain");
+        return mv;
+    }
+
+    @RequestMapping("techStepOne")
+    public ModelAndView techStepOne(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techStepOne");
         return mv;
     }
 
