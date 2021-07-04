@@ -63,6 +63,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/techCtl/**", "anon");
         filterChainDefinitionMap.put("/images/login/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
+        filterChainDefinitionMap.put("/image/**", "anon");
         filterChainDefinitionMap.put("/pdfimage/**", "anon");
 
         //对所有用户认证

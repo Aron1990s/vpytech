@@ -53,120 +53,121 @@ The above copyright notice and this permission notice shall be included in all c
         ::-webkit-scrollbar-thumb:vertical{
             background-color: #9c27b0;
         }
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .spanBlack{
+            color: black;
+        }
     </style>
 </head>
 
 <body class="">
 <div class="main-panel" style="float: none;width: 100%">
-    <th:block th:include="pageTemplate/navHead::navMain('教程第一步')" />
+    <th:block th:include="pageTemplate/navHead::navMain('第一步 | Vpython安装')" />
     <div class="content">
         <div class="container-fluid">
             <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql </span></code><span>为引入mysql连接池</span><br>
+                <span style="font-weight: bold">Vpython安装方法共两种接下来分别介绍。</span>
             </figure>
             <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">xlrd </span></code><span>为引入excel读取所需的扩展包</span><br>
+                <span style="font-weight: bold">方法一：</span>
+            </figure>
+            <figure class="highlight">
+                <span>    1、如图所示，现在电脑中安装python:打开 <span style="color: #65a2ff">https://www.python.org/</span>网址，点击Downloads下载</span>
+            </figure>
+            <figure class="highlight">
+                <img src="../image/pythonMainPage.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>2、安装好python后，按住<code><span>win+R</span></code>，在输入<code><span>cmd</span></code>，在跳出的黑丝界面中输入<code><span>pip install vpython</span></code></span>
+            </figure>
+            <figure class="highlight" style="width: 40%">
+                <img src="../image/cmdPage.png" alt="">
+            </figure>
+            <figure class="highlight" style="width: 80%">
+                <img src="../image/cmdPip.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>这一步可能不同的电脑会遇到不同的报错信息，如果不能顺利安装，查看一下报错信息，将报错信息复制到网上寻找解决方案。一般遇到的情况如下：
+                    pip更新失败或者下载vpython失败，可能是服务器在国外，可以用镜像网站，可以参考如下或其他相关网址：<span style="color: #65a2ff">https://cloud.tencent.com/developer/article/1742030</span>（也可以找其他镜像网站）
+                </span>
+            </figure>
+            <figure class="highlight">
+                <span>3.在电脑开始界面中，你会找到跟python一起出现的shell，打开，输入<code><span>from vpython import*</span></code>，换行，再输入<code><span>sphere()</span></code>,如果出现如下画面，说明安装一切正常，可以正式开始使用vpython库了。</span>
+            </figure>
+            <figure class="highlight">
+                <code><span>from vpython import*</span></code><br>
+                <code><span class="spanBlack">sphere()</span></code><br>
+            </figure>
+            <figure class="highlight">
+                <span>效果图如图所示：</span>
+            </figure>
+            <figure class="highlight" style="width: 50%">
+                <img src="../image/simpleSphere.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span style="font-weight: bold">方法二：</span>
+            </figure>
+            <figure class="highlight">
+                <span>1、打开网址：<span style="color: #65a2ff">https://www.anaconda.com/</span>，安装anaconda，安装过程中注意添加到环境变量。</span>
+            </figure>
+            <figure class="highlight" style="width: 100%">
+                <img src="../image/anaconda.png" alt="">
+            </figure>
+            <figure class="highlight" style="width: 100%">
+                <img src="../image/anacondaTwo.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>2.在开始菜单中，点击Anaconda Prompt，如下图</span>
+            </figure>
+            <figure class="highlight" style="width: 40%">
+                <img src="../image/anacondaThree.png" alt="">
+            </figure>
+            <figure>
+                <span>3.在打开的界面中输入<code><span>pip install vpython</span></code>，如下图：</span>
+            </figure>
+            <figure class="highlight" style="width: 80%">
+                <img src="../image/pipTwo.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>4.检查vpython是否安装成功，继续输入<code><span>pip list</span></code>，如下图：</span>
+            </figure>
+            <figure class="highlight" style="width: 80%">
+                <img src="../image/pipThree.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>找到vpython，说明安装成功。</span>
+            </figure>
+            <figure class="highlight" style="width: 80%">
+                <img src="../image/pipFour.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>5.点击开始菜单，找到Spyder编辑器：</span>
+            </figure>
+            <figure class="highlight" style="width: 40%">
+                <img src="../image/spyder.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>6，简单设置一下编辑器，比如将其变为中文：</span>
+            </figure>
+            <figure class="highlight" style="width: 100%">
+                <img src="../image/spyderTwo.png" alt="">
+            </figure>
+            <figure>
+                <span>更多设置，可以网上找相关教程。</span>
+            </figure>
+            <figure>
+                <span>7，在spyder中界面中输入<code><span>from vpython import*</span></code>，换行，输入<code><span>sphere()</span></code>，见到如下画面说明安装成功：</span>
+            </figure>
+            <figure class="highlight" style="width: 50%">
+                <img src="../image/simpleSphere.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>本教程使用方法二安装，使用spyder写程序。</span>
+            </figure>
 
-            </figure>
-            <figure class="highlight">
-                <span>引入完成之后，接下来进行数据库的连接，输入ip地址，端口，用户名，密码，编码格式等进行数据库配置</span><br>
-
-            </figure>
-            <figure class="highlight">
-                <span>数据库连接建立之后，接下来就是读取Excel中sheet的内容</span>
-
-            </figure>
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
-
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
-
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
-
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
         </div>
     </div>
 </div>

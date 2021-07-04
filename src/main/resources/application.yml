@@ -1,5 +1,5 @@
 server:
-  port: 8078
+  port: 8077
   servlet:
     context-path: /vpythonTech
   max-http-header-size: 102400
@@ -42,4 +42,5 @@ spring:
          additional-paths: src/main/java
 
 imageUpload:
-   path: /usr/local/quesBank/img/
+#   path: /usr/local/quesBank/img/
+    path: D:/vpythonTech/
