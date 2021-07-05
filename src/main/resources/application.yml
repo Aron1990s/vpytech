@@ -42,5 +42,5 @@ spring:
          additional-paths: src/main/java
 
 imageUpload:
-   path: /usr/local/vpythonTech/img/
-#    path: D:/vpythonTech/
+#   path: /usr/local/vpythonTech/img/
+    path: D:/vpythonTech/

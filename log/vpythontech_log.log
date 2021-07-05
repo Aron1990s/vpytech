@@ -1,794 +1,135 @@
-2021-07-04 07:56:09,730:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 1804 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 07:56:09,783:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 07:56:09,861:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 07:56:09,862:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 07:56:11,538:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 07:56:11,600:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
-2021-07-04 07:56:12,447:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$86dbe03f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:12,839:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:12,850:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$db8243b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:12,862:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:12,873:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$2b31acb6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:12,946:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,103:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 07:56:18,162:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,167:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,168:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,169:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,170:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,170:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,183:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,248:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 07:56:18,871:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 07:56:18,881:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 07:56:18,881:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 07:56:18,881:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 07:56:19,097:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 07:56:19,097:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 9235 ms
-2021-07-04 07:56:19,307:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 07:56:19,468:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 07:56:19,547:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 07:56:19,581:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 07:56:19,922:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 07:56:20,149:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 07:56:20,436:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 07:56:20,489:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 07:56:20,515:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 07:56:20,536:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 07:56:20,538:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 07:56:20,538:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 07:56:20,542:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 07:56:20,548:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 11.643 seconds (JVM running for 18.502)
-2021-07-04 07:58:22,617:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 07:58:22,617:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 07:58:22,627:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 10 ms
-2021-07-04 08:01:02,486:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 5108 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:01:02,497:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:01:02,557:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:01:02,557:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:01:03,277:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:01:03,311:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
-2021-07-04 08:01:03,606:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$92646e68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:03,807:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:03,820:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$e70ad1d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:03,830:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:03,836:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$36ba3adf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:03,883:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,595:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:01:08,674:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,683:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,686:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,690:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,691:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,692:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,699:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:08,750:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:09,253:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:01:09,263:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:01:09,263:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:01:09,263:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:01:09,479:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:01:09,479:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6922 ms
-2021-07-04 08:01:09,654:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:01:09,721:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:01:09,786:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:01:09,799:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:01:10,009:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:01:10,250:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:01:10,523:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:01:10,543:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:01:10,837:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:01:10,865:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:01:10,899:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:01:10,901:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:01:10,902:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:01:10,911:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.925 seconds (JVM running for 12.818)
-2021-07-04 08:01:23,950:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 08:01:23,951:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 08:01:23,959:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 7 ms
-2021-07-04 08:01:54,446:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 21752 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:01:54,453:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:01:54,494:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:01:54,494:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:01:55,125:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:01:55,151:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 08:01:55,364:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$6979c1ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:55,564:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:55,574:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$be20253f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:55,584:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:55,592:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dcf8e45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:01:55,643:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,913:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:02:02,959:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,964:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,965:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,966:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,967:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,967:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:02,971:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:03,021:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:02:03,423:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:02:03,432:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:02:03,432:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:02:03,433:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:02:03,640:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:02:03,640:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 9146 ms
-2021-07-04 08:02:03,775:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:02:03,835:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:02:03,903:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:02:03,904:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:02:04,086:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:02:04,243:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:02:04,458:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:02:04,472:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:02:04,541:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:02:04,559:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:02:04,587:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:02:04,588:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:02:04,589:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:02:04,599:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 10.586 seconds (JVM running for 14.348)
-2021-07-04 08:02:11,496:INFO http-nio-8077-exec-2 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 08:02:11,497:INFO http-nio-8077-exec-2 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 08:02:11,505:INFO http-nio-8077-exec-2 (FrameworkServlet.java:547) - Completed initialization in 8 ms
-2021-07-04 08:20:54,760:INFO Thread-29 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:20:54,780:INFO Thread-29 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:20:54,790:INFO Thread-29 (Log4j2Impl.java:106) - {dataSource-1} closed
-2021-07-04 08:20:55,086:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 21752 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:20:55,087:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:20:55,291:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:20:55,302:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
-2021-07-04 08:20:55,350:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$6979c1ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:20:55,364:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:20:55,369:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$be20253f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:20:55,373:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:20:55,376:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dcf8e45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:20:55,378:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:23:57,315:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 14244 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:23:57,324:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:23:57,365:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:23:57,365:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:23:57,986:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:23:58,011:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
-2021-07-04 08:23:58,243:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$525aef80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:23:58,450:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:23:58,460:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$a70152f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:23:58,469:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:23:58,475:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$f6b0bbf7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:23:58,519:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,709:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:24:02,758:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,762:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,763:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,765:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,766:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,767:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,770:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:02,808:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:24:03,209:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:24:03,222:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:24:03,223:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:24:03,223:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:24:03,465:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:24:03,466:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6100 ms
-2021-07-04 08:24:03,613:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:24:03,678:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:24:03,757:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:24:03,765:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:24:03,969:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:24:04,117:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:24:04,356:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:24:04,370:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:24:04,512:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:24:04,530:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:24:04,583:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:24:04,585:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:24:04,585:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:24:04,594:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.755 seconds (JVM running for 11.482)
-2021-07-04 08:24:18,614:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 08:24:18,615:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 08:24:18,623:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
-2021-07-04 08:27:00,578:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 1572 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:27:00,587:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:27:00,628:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:27:00,629:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:27:01,267:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:27:01,290:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
-2021-07-04 08:27:01,511:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$f1e12924] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:01,707:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:01,717:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$46878c95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:01,728:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:01,735:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9636f59b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:01,785:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,153:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:27:06,202:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,205:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,206:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,208:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,209:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,209:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,214:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,247:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:27:06,637:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:27:06,648:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:27:06,648:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:27:06,649:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:27:06,854:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:27:06,854:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6225 ms
-2021-07-04 08:27:07,013:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:27:07,073:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:27:07,127:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:27:07,135:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:27:07,332:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:27:07,469:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:27:07,664:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:27:07,674:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:27:07,787:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:27:07,805:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:27:07,856:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:27:07,858:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:27:07,858:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:27:07,866:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.732 seconds (JVM running for 11.639)
-2021-07-04 08:28:30,067:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 08:28:30,067:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 08:28:30,078:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 11 ms
-2021-07-04 08:49:28,368:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 22916 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:49:28,378:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:49:28,433:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:49:28,433:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:49:29,120:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:49:29,149:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 08:49:29,394:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$37c15726] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:29,609:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:29,618:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$8c67ba97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:29,626:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:29,632:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dc17239d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:29,676:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,804:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:49:33,849:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,855:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,857:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,858:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,860:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,860:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,865:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:33,906:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:49:34,299:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:49:34,309:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:49:34,309:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:49:34,310:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:49:34,500:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:49:34,500:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6066 ms
-2021-07-04 08:49:34,661:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:49:34,722:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:49:34,791:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:49:34,796:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:49:34,984:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:49:35,126:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:49:35,319:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:49:35,329:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:49:35,456:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:49:35,476:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:49:35,505:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:49:35,522:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:49:35,522:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:49:35,541:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.617 seconds (JVM running for 11.299)
-2021-07-04 08:49:35,648:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 08:49:35,648:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 08:49:35,655:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 7 ms
-2021-07-04 08:52:21,528:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 18112 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:52:21,536:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:52:21,579:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:52:21,580:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:52:22,219:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:52:22,246:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
-2021-07-04 08:52:22,494:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$a86b1d24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:22,703:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:22,713:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$fd118095] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:22,721:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:22,727:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$4cc0e99b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:22,773:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,856:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:52:26,905:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,908:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,910:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,912:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,914:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,914:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,918:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:26,952:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:52:27,371:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:52:27,380:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:52:27,381:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:52:27,381:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:52:27,566:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:52:27,566:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 5986 ms
-2021-07-04 08:52:27,708:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:52:27,768:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:52:27,826:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:52:27,829:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:52:28,071:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:52:28,240:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:52:28,491:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:52:28,502:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:52:28,631:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:52:28,649:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:52:28,696:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:52:28,698:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:52:28,699:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:52:28,709:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.65 seconds (JVM running for 11.499)
-2021-07-04 08:52:30,324:INFO http-nio-8077-exec-2 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 08:52:30,324:INFO http-nio-8077-exec-2 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 08:52:30,336:INFO http-nio-8077-exec-2 (FrameworkServlet.java:547) - Completed initialization in 11 ms
-2021-07-04 08:59:52,068:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 26740 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 08:59:52,077:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 08:59:52,118:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 08:59:52,118:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 08:59:52,738:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 08:59:52,764:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
-2021-07-04 08:59:53,014:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$a08179aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:53,228:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:53,238:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$f527dd1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:53,246:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:53,253:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$44d74621] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:53,298:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,510:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 08:59:57,558:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,563:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,565:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,566:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,567:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,567:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,571:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:57,606:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 08:59:58,016:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 08:59:58,026:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:59:58,026:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 08:59:58,027:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 08:59:58,235:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 08:59:58,236:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6118 ms
-2021-07-04 08:59:58,390:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 08:59:58,466:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 08:59:58,527:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 08:59:58,529:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 08:59:58,699:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 08:59:58,846:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 08:59:59,050:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 08:59:59,061:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 08:59:59,164:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 08:59:59,183:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 08:59:59,214:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 08:59:59,216:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 08:59:59,217:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 08:59:59,230:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.602 seconds (JVM running for 11.834)
-2021-07-04 09:00:02,475:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:00:02,475:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:00:02,483:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
-2021-07-04 09:02:28,988:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 21832 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:02:28,997:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:02:29,042:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:02:29,042:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:02:29,756:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:02:29,782:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:02:30,038:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$22454627] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:30,258:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:30,271:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$76eba998] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:30,280:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:30,288:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$c69b129e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:30,342:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,753:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:02:34,815:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,820:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,821:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,823:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,824:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,825:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,830:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:34,873:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:02:35,327:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:02:35,338:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:02:35,339:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:02:35,339:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:02:35,539:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:02:35,540:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6497 ms
-2021-07-04 09:02:35,688:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:02:35,758:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:02:35,829:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:02:35,836:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:02:36,035:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:02:36,183:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:02:36,381:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:02:36,393:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:02:36,505:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:02:36,545:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:02:36,574:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:02:36,576:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:02:36,577:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:02:36,589:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.049 seconds (JVM running for 12.316)
-2021-07-04 09:02:48,167:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:02:48,167:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:02:48,175:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
-2021-07-04 09:05:35,714:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 22496 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:05:35,723:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:05:35,765:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:05:35,765:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:05:36,418:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:05:36,444:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:05:36,679:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$e41b780c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:36,876:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:36,887:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$38c1db7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:36,898:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:36,904:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$88714483] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:36,951:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,264:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:05:41,308:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,311:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,312:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,314:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,316:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,316:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,319:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,354:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:05:41,748:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:05:41,758:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:05:41,759:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:05:41,759:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:05:41,953:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:05:41,954:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6187 ms
-2021-07-04 09:05:42,123:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:05:42,186:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:05:42,248:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:05:42,252:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:05:42,431:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:05:42,571:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:05:42,764:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:05:42,774:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:05:42,898:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:05:42,918:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:05:42,945:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:05:42,947:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:05:42,948:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:05:42,957:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.671 seconds (JVM running for 11.704)
-2021-07-04 09:07:27,012:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:07:27,012:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:07:27,021:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 9 ms
-2021-07-04 09:11:06,107:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 21212 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:11:06,118:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:11:06,158:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:11:06,159:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:11:06,878:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:11:06,907:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:11:07,148:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$71d3c1e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:07,418:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:07,427:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$c67a2552] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:07,435:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:07,441:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$16298e58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:07,487:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,811:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:11:11,866:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,873:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,874:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,877:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,878:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,879:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,885:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:11,936:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:11:12,376:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:11:12,386:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:11:12,387:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:11:12,387:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:11:12,607:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:11:12,607:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6448 ms
-2021-07-04 09:11:12,757:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:11:12,820:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:11:12,883:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:11:12,890:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:11:13,093:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:11:13,247:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:11:13,467:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:11:13,478:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:11:13,615:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:11:13,641:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:11:13,673:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:11:13,676:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:11:13,677:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:11:13,688:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.03 seconds (JVM running for 11.807)
-2021-07-04 09:11:26,112:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:11:26,113:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:11:26,123:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 9 ms
-2021-07-04 09:17:42,555:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 27768 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:17:42,566:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:17:42,624:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:17:42,625:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:17:43,356:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:17:43,386:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
-2021-07-04 09:17:43,640:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$ae42714c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:43,889:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:43,899:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$2e8d4bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:43,908:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:43,915:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$52983dc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:43,967:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,363:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:17:48,417:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,421:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,422:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,425:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,426:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,427:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,431:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,477:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:17:48,946:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:17:48,957:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:17:48,958:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:17:48,959:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:17:49,168:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:17:49,168:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6543 ms
-2021-07-04 09:17:49,340:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:17:49,416:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:17:49,478:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:17:49,486:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:17:49,687:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:17:49,847:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:17:50,083:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:17:50,096:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:17:50,210:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:17:50,228:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:17:50,256:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:17:50,259:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:17:50,259:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:17:50,269:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.211 seconds (JVM running for 12.481)
-2021-07-04 09:18:00,161:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:18:00,161:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:18:00,168:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 7 ms
-2021-07-04 09:32:39,815:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 21224 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:32:39,827:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:32:39,895:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:32:39,895:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:32:40,668:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:32:40,701:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
-2021-07-04 09:32:41,006:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$476b1312] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:41,279:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:41,292:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$9c117683] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:41,303:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:41,314:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$ebc0df89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:41,360:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,887:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:32:45,945:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,952:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,953:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,955:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,957:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,958:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:45,965:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:46,011:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:32:46,488:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:32:46,497:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:32:46,498:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:32:46,498:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:32:46,723:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:32:46,723:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6827 ms
-2021-07-04 09:32:46,893:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:32:46,957:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:32:47,025:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:32:47,034:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:32:47,235:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:32:47,392:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:32:47,636:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:32:47,647:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:32:47,803:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:32:47,824:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:32:47,858:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:32:47,860:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:32:47,861:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:32:47,872:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.612 seconds (JVM running for 13.091)
-2021-07-04 09:32:52,237:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:32:52,237:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:32:52,245:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
-2021-07-04 09:35:07,276:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 17400 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:35:07,293:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:35:07,359:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:35:07,360:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:35:08,095:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:35:08,121:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:35:08,359:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$49e9d1a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:08,587:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:08,595:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$9e903513] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:08,604:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:08,611:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$ee3f9e19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:08,658:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,194:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:35:13,249:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,253:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,255:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,256:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,258:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,259:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,264:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,305:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:35:13,729:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:35:13,739:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:35:13,740:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:35:13,740:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:35:13,913:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:35:13,913:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6553 ms
-2021-07-04 09:35:14,091:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:35:14,175:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:35:14,247:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:35:14,255:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:35:14,506:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:35:14,660:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:35:14,879:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:35:14,890:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:35:15,002:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:35:15,026:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:35:15,058:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:35:15,060:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:35:15,060:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:35:15,072:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.262 seconds (JVM running for 12.646)
-2021-07-04 09:35:15,187:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:35:15,188:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:35:15,200:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 12 ms
-2021-07-04 09:51:09,690:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 22040 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:51:09,699:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:51:09,753:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:51:09,754:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:51:10,522:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:51:10,548:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:51:10,822:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$5698153d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:11,082:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:11,096:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$ab3e78ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:11,108:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:11,115:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$faede1b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:11,175:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,449:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:51:15,519:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,525:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,528:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,530:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,531:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,532:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,536:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:15,585:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:51:16,083:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:51:16,092:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:51:16,093:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:51:16,093:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:51:16,310:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:51:16,311:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6557 ms
-2021-07-04 09:51:16,485:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:51:16,556:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:51:16,630:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:51:16,638:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:51:16,847:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:51:17,023:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:51:17,312:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:51:17,326:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:51:17,503:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:51:17,535:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:51:17,570:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:51:17,572:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:51:17,572:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:51:17,583:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.394 seconds (JVM running for 12.76)
-2021-07-04 09:51:18,404:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-04 09:51:18,404:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-07-04 09:51:18,417:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 13 ms
-2021-07-04 09:53:42,690:INFO Thread-25 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:53:42,693:INFO Thread-25 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:53:42,705:INFO Thread-25 (Log4j2Impl.java:106) - {dataSource-1} closed
-2021-07-04 09:53:43,069:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 22040 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:53:43,070:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:53:43,358:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:53:43,371:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
-2021-07-04 09:53:43,417:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$5698153d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:43,433:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:43,439:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$ab3e78ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:43,443:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:43,445:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$faede1b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:43,447:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,310:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-2} inited
-2021-07-04 09:53:47,322:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,325:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,325:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,326:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,327:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,327:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,330:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,336:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:53:47,526:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:53:47,527:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:53:47,527:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:53:47,528:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:53:47,566:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:53:47,566:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 4492 ms
-2021-07-04 09:53:47,662:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:53:47,686:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:53:47,695:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:53:47,710:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:53:47,711:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:53:47,761:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:53:48,155:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:53:48,168:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:53:48,171:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:53:48,172:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:53:48,172:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:53:48,178:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 5.264 seconds (JVM running for 163.356)
-2021-07-04 09:53:48,182:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
-2021-07-04 09:54:07,344:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 18664 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:54:07,354:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:54:07,417:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-04 09:54:07,418:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-04 09:54:08,153:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:54:08,180:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:54:08,434:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$3c859543] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:08,647:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:08,657:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$912bf8b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:08,667:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:08,673:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$e0db61ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:08,720:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:12,973:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:54:13,029:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,036:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,038:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,040:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,041:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,042:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,047:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,097:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:54:13,576:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
-2021-07-04 09:54:13,587:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:54:13,587:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-07-04 09:54:13,588:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-07-04 09:54:13,792:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-07-04 09:54:13,792:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6373 ms
-2021-07-04 09:54:13,972:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:54:14,047:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:54:14,111:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:54:14,114:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:54:14,327:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:54:14,485:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:54:14,733:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:54:14,766:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:54:14,890:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
-2021-07-04 09:54:14,913:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
-2021-07-04 09:54:14,942:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
-2021-07-04 09:54:14,945:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
-2021-07-04 09:54:14,945:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:54:14,957:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.141 seconds (JVM running for 11.882)
-2021-07-04 09:54:56,598:INFO main (AbstractTestContextBootstrapper.java:308) - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.aron.vpythontech.VpythontechApplicationTests], using SpringBootContextLoader
-2021-07-04 09:54:56,616:INFO main (AbstractContextLoader.java:264) - Could not detect default resource locations for test class [com.aron.vpythontech.VpythontechApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-07-04 09:54:56,618:INFO main (AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [com.aron.vpythontech.VpythontechApplicationTests]: VpythontechApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-07-04 09:54:56,755:INFO main (SpringBootTestContextBootstrapper.java:237) - Found @SpringBootConfiguration com.aron.vpythontech.VpythontechApplication for test class com.aron.vpythontech.VpythontechApplicationTests
-2021-07-04 09:54:56,947:INFO main (AbstractTestContextBootstrapper.java:248) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2021-07-04 09:54:56,999:INFO main (AbstractTestContextBootstrapper.java:177) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@287f94b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30b34287, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5489c777, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3676ac27, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62f87c44, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48f5bde6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@525d79f0, org.springframework.test.context.event.EventPublishingTestExecutionListener@5149f008, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7072bc39, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@158d255c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ca65ce4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@327120c8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5707c1cb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2b5cb9b2]
-2021-07-04 09:54:57,580:INFO main (StartupInfoLogger.java:55) - Starting VpythontechApplicationTests on ARON-OMG-HEIHEI with PID 26924 (started by aron in D:\Idea\workspace\vpythontech)
-2021-07-04 09:54:57,586:INFO main (SpringApplication.java:655) - The following profiles are active: constants
-2021-07-04 09:54:58,580:INFO main (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-07-04 09:54:58,608:INFO main (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
-2021-07-04 09:54:59,002:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$52697f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:01,412:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:01,431:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$59ccfb61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:01,462:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:01,477:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$a97c6467] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:01,606:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,056:INFO main (Log4j2Impl.java:106) - {dataSource-1} inited
-2021-07-04 09:55:06,179:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,199:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,202:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,205:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,207:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,207:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,226:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,346:INFO main (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-07-04 09:55:06,800:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:55:06,993:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-04 09:55:07,318:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
-2021-07-04 09:55:07,684:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-07-04 09:55:07,699:WARN main (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-04 09:55:08,189:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2021-07-04 09:55:08,963:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-04 09:55:08,981:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:55:09,533:INFO main (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories��
-2021-07-04 09:55:09,534:INFO main (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
-2021-07-04 09:55:09,547:INFO main (StartupInfoLogger.java:61) - Started VpythontechApplicationTests in 12.48 seconds (JVM running for 15.379)
-2021-07-04 09:55:09,998:INFO SpringContextShutdownHook (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-07-04 09:55:10,001:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-04 09:55:10,013:INFO SpringContextShutdownHook (Log4j2Impl.java:106) - {dataSource-1} closed
+2021-07-06 00:31:22,068:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 23068 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
+2021-07-06 00:31:22,091:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2021-07-06 00:31:22,144:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-06 00:31:22,145:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-06 00:31:22,884:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-07-06 00:31:22,915:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2021-07-06 00:31:23,163:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$17f4cc79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:23,411:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:23,422:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$6c9b2fea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:23,431:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:23,440:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$bc4a98f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:23,489:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,839:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2021-07-06 00:31:27,897:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,901:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,902:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,905:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,906:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,906:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,911:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:27,954:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:31:28,422:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2021-07-06 00:31:28,433:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2021-07-06 00:31:28,433:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-07-06 00:31:28,434:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-07-06 00:31:28,657:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-07-06 00:31:28,657:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6512 ms
+2021-07-06 00:31:28,843:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 00:31:28,922:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-06 00:31:28,995:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-07-06 00:31:29,002:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-06 00:31:29,222:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-07-06 00:31:29,389:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-07-06 00:31:29,616:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-06 00:31:29,629:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 00:31:29,758:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2021-07-06 00:31:29,782:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2021-07-06 00:31:29,835:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
+2021-07-06 00:31:29,838:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2021-07-06 00:31:29,838:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2021-07-06 00:31:29,854:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 8.292 seconds (JVM running for 13.564)
+2021-07-06 00:31:29,858:INFO restartedMain (VpythontechApplication.java:16) - [~~~乾杯~~梦想已在路上~~ (^_^)／★＼(^_^) ~~道路已在脚下~~乾杯~~~]
+2021-07-06 00:31:38,501:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-06 00:31:38,502:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-07-06 00:31:38,513:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 11 ms
+2021-07-06 00:32:24,287:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 20520 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
+2021-07-06 00:32:24,295:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2021-07-06 00:32:24,352:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-06 00:32:24,352:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-06 00:32:25,063:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-07-06 00:32:25,090:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2021-07-06 00:32:25,345:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$71dd93ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:25,557:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:25,568:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$c683f71f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:25,578:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:25,584:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$16336025] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:25,636:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,627:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2021-07-06 00:32:29,674:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,677:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,679:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,682:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,683:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,683:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,687:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:29,721:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:32:30,136:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2021-07-06 00:32:30,146:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2021-07-06 00:32:30,146:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-07-06 00:32:30,147:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-07-06 00:32:30,376:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-07-06 00:32:30,384:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 6023 ms
+2021-07-06 00:32:30,549:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 00:32:30,609:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-06 00:32:30,669:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-07-06 00:32:30,672:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-06 00:32:30,863:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-07-06 00:32:31,006:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-07-06 00:32:31,219:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-06 00:32:31,232:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 00:32:31,327:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2021-07-06 00:32:31,375:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2021-07-06 00:32:31,407:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
+2021-07-06 00:32:31,409:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2021-07-06 00:32:31,409:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2021-07-06 00:32:31,418:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.592 seconds (JVM running for 11.317)
+2021-07-06 00:32:31,421:INFO restartedMain (VpythontechApplication.java:16) - [~~~乾杯~~梦想已在路上~~ (^_^)／★＼(^_^) ~~道路已在脚下~~乾杯~~~]
+2021-07-06 00:32:32,094:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-06 00:32:32,095:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-07-06 00:32:32,107:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 12 ms
+2021-07-06 00:36:23,486:INFO restartedMain (StartupInfoLogger.java:55) - Starting VpythontechApplication on ARON-OMG-HEIHEI with PID 11636 (D:\Idea\workspace\vpythontech\target\classes started by aron in D:\Idea\workspace\vpythontech)
+2021-07-06 00:36:23,496:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2021-07-06 00:36:23,544:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-06 00:36:23,544:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-06 00:36:24,129:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-07-06 00:36:24,156:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2021-07-06 00:36:24,365:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'shiroConfig' of type [com.aron.vpythontech.config.ShiroConfig$$EnhancerBySpringCGLIB$$c8b5af4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:24,589:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:24,599:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'druidConfig' of type [com.aron.vpythontech.config.DruidConfig$$EnhancerBySpringCGLIB$$6131be65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:24,609:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:24,614:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b0e1276b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:24,659:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,724:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2021-07-06 00:36:28,776:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,781:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,782:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,784:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserDao' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,785:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'systemUserService' of type [com.aron.vpythontech.service.systemUser.SystemUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,786:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'quesBankRealm' of type [com.aron.vpythontech.shiro.realm.QuesBankRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,789:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:28,827:INFO restartedMain (PostProcessorRegistrationDelegate.java:335) - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:36:29,239:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2021-07-06 00:36:29,248:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2021-07-06 00:36:29,249:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-07-06 00:36:29,249:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-07-06 00:36:29,426:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-07-06 00:36:29,427:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 5883 ms
+2021-07-06 00:36:29,564:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 00:36:29,632:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-06 00:36:29,702:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-07-06 00:36:29,706:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-06 00:36:29,893:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-07-06 00:36:30,058:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-07-06 00:36:30,255:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-06 00:36:30,264:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 00:36:30,371:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2021-07-06 00:36:30,388:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2021-07-06 00:36:30,417:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/vpythonTech'
+2021-07-06 00:36:30,419:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2021-07-06 00:36:30,420:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2021-07-06 00:36:30,431:INFO restartedMain (StartupInfoLogger.java:61) - Started VpythontechApplication in 7.378 seconds (JVM running for 11.077)
+2021-07-06 00:36:30,435:INFO restartedMain (VpythontechApplication.java:16) - [~~~乾杯~~梦想已在路上~~ (^_^)／★＼(^_^) ~~道路已在脚下~~乾杯~~~]
+2021-07-06 00:36:35,124:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-06 00:36:35,125:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-07-06 00:36:35,133:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms

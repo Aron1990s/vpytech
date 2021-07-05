@@ -60,6 +60,9 @@ The above copyright notice and this permission notice shall be included in all c
         .spanBlack{
             color: black;
         }
+        .spanBold{
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -69,12 +72,69 @@ The above copyright notice and this permission notice shall be included in all c
     <div class="content">
         <div class="container-fluid">
             <figure class="highlight">
-                <span>欧拉法：思路与微元法一致，将运动切分成很小的一段，每段时间间隔为 ，不管是什么运动，这段时间内物体都做匀速直线运动，然后再算下一个时刻加速度，具体表达式如下：</span>
+                <span class="spanBold">欧拉法：思路与微元法一致，将运动切分成很小的一段，每段时间间隔为 ，不管是什么运动，这段时间内物体都做匀速直线运动，然后再算下一个时刻加速度，具体表达式如下：</span>
             </figure>
             <figure class="highlight" style="width: 30%">
                 <img src="../image/formula.png" alt="">
             </figure>
-
+            <figure class="highlight">
+                <span style="font-family: Consolas"><i><strong>ball </strong></i></span><span>是一个物体，或者说一个质点， 是这个物体的加速度，第一行就是求此加速度，</span><span style="font-family: Consolas"><i><strong>ball.v </strong></i></span><span>是这个物体的速度，第二行的意思是用此时的加速度乘以一个小的时间间隔，我们认为这个时间间隔内物体都是以这个加速运行的，那么将它原来的速度加上该段时间内速度增量就是现在的速度。这里需要注意的是，等号的意义是赋值，跟数学中的意义不同。同理，现在的位置就是原来的位置，加上该段时间内位置的增量，也就是第三行的意义。不管后面的运动多么复杂，基本控制物体运动的方法都是这个，所以，会这个方法就掌握了vpython模拟运动的本质了，后面的学习将会很轻松，考虑到高中生也可能看这个教程，笔者再放一张个动图，加深理解。</span>
+            </figure>
+            <figure class="highlight" style="width: 50%">
+                <img src="../image/dyFormula.gif" alt="">
+            </figure>
+            <figure>
+                <span class="spanBold">2.1  匀变速直线运动</span>
+            </figure>
+            <figure class="highlight">
+                <code><span>from vpython import*</span></code><br>
+                <code><span class="spanBlack">myball = sphere(radius=0.1, v=vec(0,0,0))</span></code><code></code><br>
+                <code><span class="spanBlack">a = vec(0.001,0,0)</span></code><br>
+                <code><span class="spanBlack">t = 0</span></code><br>
+                <code><span class="spanBlack">dt = 0.0001</span></code><br>
+                <code><span class="spanBlack"><span style="color: #5b58ff">while</span> True:</span></code><br>
+                <code><span class="spanBlack">&nbsp;&nbsp;&nbsp;&nbsp;myball.v = myball.v + a * dt</span></code><br>
+                <code><span class="spanBlack">&nbsp;&nbsp;&nbsp;&nbsp;myball.pos = myball.pos + myball.v * dt</span></code><br>
+                <code><span class="spanBlack">&nbsp;&nbsp;&nbsp;&nbsp;t = t + dt</span></code><br>
+            </figure>
+            <figure class="highlight">
+                <span class="spanBold">其中:</span>
+            </figure>
+            <figure class="highlight">
+                <code><span>from vpython import*</span></code><br>
+                <span>导入vpython库，之后的所有程序都要用到。</span>
+            </figure>
+            <figure class="highlight">
+                <code><span class="spanBlack">myball = sphere(radius=0.1, v=vec(0,0,0))</span></code><code></code><br>
+                <span>创建一个小球，sphere后面括号中的内容是小球的属性，比如我这里设置了它的半径radius以及初速度，vec是vector的缩写，表示这是一个矢量，要用xyz三个数来表示，这个跟数学中是一样的。</span>
+            </figure>
+            <figure class="highlight">
+                <code><span class="spanBlack">a = vec(0.001,0,0)</span></code><br>
+                <span>加速度a也是矢量，此案例中，将加速度x方向的值设置为0.001，其余是0，也就是说，模拟的是一维的运动。</span>
+            </figure>
+            <figure class="highlight">
+                <code><span class="spanBlack">t = 0</span></code><br>
+                <code><span class="spanBlack">dt = 0.0001</span></code><br>
+                <span>设置时间和时间间隔。</span>
+            </figure>
+            <figure class="highlight">
+                <code><span class="spanBlack"><span style="color: #5b58ff">while</span> True:</span></code><br>
+                <code><span class="spanBlack">&nbsp;&nbsp;&nbsp;&nbsp;myball.v = myball.v + a * dt</span></code><br>
+                <code><span class="spanBlack">&nbsp;&nbsp;&nbsp;&nbsp;myball.pos = myball.pos + myball.v * dt</span></code><br>
+                <code><span class="spanBlack">&nbsp;&nbsp;&nbsp;&nbsp;t = t + dt</span></code><br>
+                <span>开始循环，只要满足while后面的条件，循环就一直进行，这个条件可以改，比如改成 ，表示当时间小于等于2秒的时间内，执行此循环。</span>
+            </figure>
+            <figure class="highlight">
+                <code><span class="spanBlack">myball.v = myball.v + a * dt</span></code><br>
+                <code><span class="spanBlack">myball.pos = myball.pos + myball.v * dt</span></code><br>
+                <span>两行极为运动的核心部分，欧拉法，这里需要注意的是，此时的v和a都是适量，分别有三个分量值，每个分量都乘以<span style="font-family: Consolas"><i><strong>dt</strong></i></span>。</span>
+            </figure>
+            <figure class="highlight" style="width: 50%">
+                <img src="../image/sphereOne.png" alt="">
+            </figure>
+            <figure class="highlight" style="width: 50%">
+                <img src="../image/sphereTwo.png" alt="">
+            </figure>
         </div>
     </div>
 </div>
