@@ -45,109 +45,36 @@ The above copyright notice and this permission notice shall be included in all c
             color: white;
             background-color: #65a2ff;
         }
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 5px;
+            background-color: white;
+        }
+        ::-webkit-scrollbar-thumb:vertical{
+            background-color: #9c27b0;
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .spanBlack{
+            color: black;
+        }
     </style>
 </head>
 
 <body class="">
 <div class="main-panel" style="float: none;width: 100%">
-    <th:block th:include="pageTemplate/navHead::navMain('教程第二步')" />
+    <th:block th:include="pageTemplate/navHead::navMain('第二步 | 动画制作基础')" />
     <div class="content">
         <div class="container-fluid">
             <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql </span></code>
-                <span>为引入mysql连接池</span>
+                <span>欧拉法：思路与微元法一致，将运动切分成很小的一段，每段时间间隔为 ，不管是什么运动，这段时间内物体都做匀速直线运动，然后再算下一个时刻加速度，具体表达式如下：</span>
             </figure>
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
+            <figure class="highlight" style="width: 30%">
+                <img src="../image/formula.png" alt="">
             </figure>
 
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
-
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
-
-            <div style="float: right;position: relative">
-                <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
-            </div>
-            <figure class="highlight">
-                <code><span class="nt">import</span> <span class="na">pymysql</span></code><br>
-                <code><span class="nt">import</span> <span class="na">xlrd</span></code><br>
-                <code><span style="color: black">connect = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='safety', charset='utf8')</span></code><br>
-                <code><span style="color: black">cursor = connect.cursor()</span></code><br>
-                <code><span style="color: black">data = xlrd.open_workbook('C:\\Users\\aron\\Desktop\\aaa.xls')</span></code><br>
-                <code><span style="color: black">table = data.sheet_by_index(0)</span></code><br>
-                <code><span style="color: black">nrows = table.nrows</span></code><br>
-                <code><span style="color: black">ncols = table.ncols</span></code><br>
-                <code><span style="color: black"><span style="color: #5b58ff">for</span> i in range(nrows):</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;if i != 0:</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;classId = '\'' + str(table.cell(i, 0).value).split('.')[0] + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;className = '\'' + str(table.cell(i, 1).value) + '\''</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;sss = 'update ef_info_stu set adminClassName = CLASSNAME where adminClassId = CLASSID'</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;aaaa = sss.replace('CLASSNAME',className).replace('CLASSID',classId)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;print(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;cursor.execute(aaaa)</span></code><br>
-                <code><span style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;connect.commit()</span></code>
-            </figure>
         </div>
     </div>
 </div>
