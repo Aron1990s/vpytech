@@ -53,6 +53,13 @@ public class TechController {
         return mv;
     }
 
+    @RequestMapping("techSphere")
+    public ModelAndView techSphere(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techSphere");
+        return mv;
+    }
+
     @RequestMapping("techStepThree")
     public ModelAndView techStepThree(){
         ModelAndView mv = new ModelAndView();
