@@ -104,7 +104,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <code><span class="spanGreen"># opacity 透明度</span></code><br>
                 <code><span class="spanGreen"># radius 球半径</span></code><br>
                 <code><span class="spanGreen"># emissive 球亮度</span></code><br>
-                <code><span class="spanGreen"># visible 是否课件</span></code><br>
+                <code><span class="spanGreen"># visible 是否可见</span></code><br>
                 <code><span class="spanGreen"># color 球颜色</span></code><br>
                 <code><span class="spanGreen"># size 球尺寸</span></code><br>
                 <code><span class="spanBlack">sphere(<span style="font-family: Consolas"><i><strong>make_trail</strong></i></span>, <span style="font-family: Consolas"><i><strong>pos</strong></i></span>, <span style="font-family: Consolas"><i><strong>opacity</strong></i></span>, <span style="font-family: Consolas"><i><strong>radius</strong></i></span>, <span style="font-family: Consolas"><i><strong>emissive</strong></i></span>, <span style="font-family: Consolas"><i><strong>visible</strong></i></span>, <span style="font-family: Consolas"><i><strong>color</strong></i></span>, <span style="font-family: Consolas"><i><strong>size</strong></i></span>)</span></code>
@@ -117,7 +117,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <span style="font-family: Consolas"><i><strong>radius </strong></i></span><span>为设置球的半径</span><br>
                 <span style="font-family: Consolas"><i><strong>emissive </strong></i></span><span>为设置球亮度；</span><br>
                 <span style="font-family: Consolas"><i><strong>visible </strong></i></span><span>为设置球是否可见，默认为True即可见，设置为False不可见；</span><br>
-                <span style="font-family: Consolas"><i><strong>color </strong></i></span><span>为设置箱盒的颜色，在这里我们一般可将其设置为<span style="font-family: Consolas"><i><strong>white</strong></i></span>, <span style="font-family: Consolas"><i><strong>blue</strong></i></span>, <span style="font-family: Consolas"><i><strong>yellow</strong></i></span>, <span style="font-family: Consolas"><i><strong>black</strong></i></span>, <span style="font-family: Consolas"><i><strong>orange</strong></i></span>, <span style="font-family: Consolas"><i><strong>grey</strong></i></span>, <span style="font-family: Consolas"><i><strong>cyan</strong></i></span>等</span>
+                <span style="font-family: Consolas"><i><strong>color </strong></i></span><span>为设置球的颜色，在这里我们一般可将其设置为<span style="font-family: Consolas"><i><strong>white</strong></i></span>, <span style="font-family: Consolas"><i><strong>blue</strong></i></span>, <span style="font-family: Consolas"><i><strong>yellow</strong></i></span>, <span style="font-family: Consolas"><i><strong>black</strong></i></span>, <span style="font-family: Consolas"><i><strong>orange</strong></i></span>, <span style="font-family: Consolas"><i><strong>grey</strong></i></span>, <span style="font-family: Consolas"><i><strong>cyan</strong></i></span>等</span>
                 <span style="font-family: Consolas"><i><strong>size </strong></i></span><span>为设置球尺寸，<span class="spanBold">radius用于设置圆球，size用于绘制椭圆型球</span>；</span><br>
             </figure>
             <figure class="highlight">
@@ -125,7 +125,7 @@ The above copyright notice and this permission notice shall be included in all c
             </figure>
             <figure class="highlight">
                 <code><span>from vpython import*</span></code><br>
-                <code><span class="spanBlack">ball = sphere(pos=vector(1,2,1), radius=10, emissive=0.7,visible=True,color=color.cyan)</span></code><code></code>
+                <code><span class="spanBlack">ball = sphere(pos=vector(1,2,1), radius=10, emissive=True, visible=True,color=color.cyan)</span></code><code></code>
             </figure>
             <figure class="highlight">
                 <span>所得的结果为：</span>

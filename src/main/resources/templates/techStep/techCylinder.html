@@ -1,0 +1,146 @@
+<!--
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="pageTemplate/pageHead::header('3D球型教程')" />
+    <style>
+        .highlight {
+            padding: 9px 14px;
+            margin-bottom: 14px;
+            background-color: #f7f7f9;
+            border: 1px solid #e1e1e8;
+            border-radius: 4px;
+        }
+        html{
+            display: none;
+            background-color: #eee;
+        }
+        .btn-clipboard {
+            background-color: transparent;
+            border: 0 none;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 4px;
+            color: #818a91;
+            cursor: pointer;
+            display: block;
+            font-size: 12px;
+            padding: 4px 8px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+        .btn-clipboard:hover {
+            color: white;
+            background-color: #65a2ff;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 5px;
+            background-color: white;
+        }
+        ::-webkit-scrollbar-thumb:vertical{
+            background-color: #9c27b0;
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .spanBlack{
+            color: black;
+        }
+        .spanGreen{
+            color: #00e676;
+        }
+        .spanBold{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="">
+<div class="main-panel" style="float: none;width: 100%">
+    <th:block th:include="pageTemplate/navHead::navMain('第五步 | 3D圆柱基础')" />
+    <div class="content">
+        <div class="container-fluid">
+            <figure class="highlight">
+                <span class="spanBold">接下来介绍3D圆柱的绘制：</span>
+            </figure>
+            <figure class="highlight">
+                <span>本篇主要讲解Vpython中3D圆柱的构建，以下为圆柱对象的简单代码：</span>
+            </figure>
+            <figure class="highlight">
+                <code><span>from vpython import*</span></code><br>
+                <code><span class="spanBlack">cy = cylinder(pos=vector(0, 2, 1), axis=vector(1, 1, 1), radius=0.5)</span></code><code></code><br>
+            </figure>
+            <figure class="highlight" style="width: 40%">
+                <img src="../image/cylinderSample.png" alt="">
+            </figure>
+            <figure class="highlight">
+                <span>cylinder参数示意图如图所示：</span>
+            </figure>
+            <figure class="highlight" style="width: 50%;text-align: center">
+                <img src="../image/cylinderFigure.png" alt="" style="width: 40%"><br>
+                <span style="font-size: 10px;color: lightgrey">图片来源:https://www.glowscript.org/docs/VPythonDocs/VisualRef-1.gif</span>
+            </figure>
+            <figure class="highlight">
+                <span class="spanBold">现在我们已经能够画出一个简单的3D圆柱了，接下来我们详细介绍下cylinder()函数的参数：</span>
+            </figure>
+            <figure class="highlight">
+                <code><span>from vpython import*</span></code><br>
+                <code><span class="spanGreen"># make_trail 是否保留移动轨迹</span></code><br>
+                <code><span class="spanGreen"># pos 圆柱起始位置</span></code><br>
+                <code><span class="spanGreen"># opacity 透明度</span></code><br>
+                <code><span class="spanGreen"># radius 圆柱半径</span></code><br>
+                <code><span class="spanGreen"># emissive 球亮度</span></code><br>
+                <code><span class="spanGreen"># visible 是否可见</span></code><br>
+                <code><span class="spanGreen"># color 球颜色</span></code><br>
+                <code><span class="spanGreen"># length 圆柱长度</span></code><br>
+                <code><span class="spanBlack">cylinder(<span style="font-family: Consolas"><i><strong>make_trail</strong></i></span>, <span style="font-family: Consolas"><i><strong>pos</strong></i></span>, <span style="font-family: Consolas"><i><strong>opacity</strong></i></span>, <span style="font-family: Consolas"><i><strong>radius</strong></i></span>, <span style="font-family: Consolas"><i><strong>emissive</strong></i></span>, <span style="font-family: Consolas"><i><strong>visible</strong></i></span>, <span style="font-family: Consolas"><i><strong>color</strong></i></span>, <span style="font-family: Consolas"><i><strong>length</strong></i></span>)</span></code>
+            </figure>
+            <figure class="highlight">
+                <span class="spanBold">其中：</span><br>
+                <span style="font-family: Consolas"><i><strong>make_trail </strong></i></span><span>为设置是否保留移动轨迹，默认值为False，当设置为True时，即保留箭头运动的轨迹；</span><br>
+                <span style="font-family: Consolas"><i><strong>pos </strong></i></span><span>为设置圆柱起始的位置，由于在3D场景中，需用<span style="font-family: Consolas"><i><strong> xyz </strong></i></span>表示位置，因此在Vpython中我们一般用<span style="font-family: Consolas"><i><strong>vector(x, y, z)</strong></i></span>设置位置；</span><br>
+                <span style="font-family: Consolas"><i><strong>opacity </strong></i></span><span>为设置圆柱的透明度，在Vpython中1为不透明；0为完全透明；</span><br>
+                <span style="font-family: Consolas"><i><strong>radius </strong></i></span><span>为设置圆柱的半径</span><br>
+                <span style="font-family: Consolas"><i><strong>emissive </strong></i></span><span>为设置圆柱亮度，默认为Ture，忽略远光效果，对象颜色由对象本身颜色决定；</span><br>
+                <span style="font-family: Consolas"><i><strong>visible </strong></i></span><span>为设置圆柱是否可见，默认为True即可见，设置为False不可见；</span><br>
+                <span style="font-family: Consolas"><i><strong>color </strong></i></span><span>为设置圆柱的颜色，在这里我们一般可将其设置为<span style="font-family: Consolas"><i><strong>white</strong></i></span>, <span style="font-family: Consolas"><i><strong>blue</strong></i></span>, <span style="font-family: Consolas"><i><strong>yellow</strong></i></span>, <span style="font-family: Consolas"><i><strong>black</strong></i></span>, <span style="font-family: Consolas"><i><strong>orange</strong></i></span>, <span style="font-family: Consolas"><i><strong>grey</strong></i></span>, <span style="font-family: Consolas"><i><strong>cyan</strong></i></span>等</span><br>
+                <span style="font-family: Consolas"><i><strong>length </strong></i></span><span>为设置圆柱尺寸</span><br>
+            </figure>
+            <figure class="highlight">
+                <span class="spanBlack">接下来我们来看一个详细的示例：</span><br>
+            </figure>
+            <figure class="highlight">
+                <code><span>from vpython import*</span></code><br>
+                <code><span class="spanBlack">cy = cylinder(pos=vector(0, 0, 0), axis=vector(1, 1, 1), radius=0.2, emissive=True, visible=True, color=color.cyan, length=1)</span></code><code></code>
+            </figure>
+            <figure class="highlight">
+                <span>所得的结果为：</span>
+            </figure>
+            <figure class="highlight" style="width: 40%">
+                <img src="../image/cylinderFigureOne.png" alt="">
+            </figure>
+        </div>
+    </div>
+</div>
+<th:block th:include="pageTemplate/pageFooter::mainJS" />
+</body>
+<script>
+    $(function () {
+        $('html').fadeIn(500)
+    })
+</script>
+</html>
