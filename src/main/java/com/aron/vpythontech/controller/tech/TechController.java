@@ -67,6 +67,13 @@ public class TechController {
         return mv;
     }
 
+    @RequestMapping("techRing")
+    public ModelAndView techRing(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("techStep/techRing");
+        return mv;
+    }
+
     @RequestMapping("techStepThree")
     public ModelAndView techStepThree(){
         ModelAndView mv = new ModelAndView();
